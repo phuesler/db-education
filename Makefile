@@ -16,3 +16,9 @@ $(TARGET): $(TARGET).c
 
 clean:
 	$(RM) $(TARGET)
+
+run:
+	./$(TARGET)
+
+debug:
+	gdb $(TARGET)
