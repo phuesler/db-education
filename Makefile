@@ -23,5 +23,10 @@ run:
 debug:
 	gdb $(TARGET)
 
+test: db
+	bundle exec rspec
+
 format:
 	clang-format -verbose -i -style=Mozilla $(TARGET).c
+
+
