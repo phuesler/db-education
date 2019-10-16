@@ -22,3 +22,6 @@ run:
 
 debug:
 	gdb $(TARGET)
+
+format:
+	clang-format -verbose -i -style=Mozilla $(TARGET).c
